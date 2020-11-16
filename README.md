@@ -1,7 +1,7 @@
 # annot-boulder-geodata
 Retrieve geodata from [ABloc.org](http://ablog.org) and integrate it into [OpenStreetMap](https://www.openstreetmap.org) database
 
-- Primary goal: Add the 37 boulder sites as nodes or area with their names
+- Primary goal: Add the 37 boulder sites as nodes or areas with their names
 - Secondary goal: Add additional tags such as grades https://wiki.openstreetmap.org/wiki/Climbing
 
 ## To do:
