@@ -1,7 +1,7 @@
 import numpy as np
+from matplotlib import image as mpimg
 from matplotlib import pyplot as plt
 from OSMPythonTools.api import Api
-from PIL import Image
 
 api = Api()
 
@@ -25,7 +25,7 @@ track_col, track_row = geo2ind @ np.stack(
 )
 
 # load image
-general_map = Image.open("img/plan_general.jpg")
+general_map = mpimg.imread("img/plan_general.jpg")
 
 # overlay OSM track over map image
 plt.imshow(np.mean(general_map, axis=2), cmap="gray")
