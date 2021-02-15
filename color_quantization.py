@@ -34,6 +34,7 @@ np.save("data/colors.npy", centers)  # colors LUT
 
 # apply color quantization
 submaps = glob.glob("img/i*.jpg")
+submaps.sort()
 submaps.insert(0, "img/plan_general.jpg")  # add general map
 for ind, submap in enumerate(submaps):
     img = mpimg.imread(submap)
